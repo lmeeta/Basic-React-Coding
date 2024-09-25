@@ -1,44 +1,19 @@
-import { useState } from "react";
-import "./App.css";
+import React from "react";
+import TableUsingMap from "./Daily Practice/TableUsingMap/TableUsingMap";
+import { Routes, Route } from "react-router-dom";
+import BasicCarousel from "./Daily Practice/BasicCarousel/BasicCarousel";
+import Home from "./Daily Practice/Home/Home";
 
-function App() {
-  const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-  const [tableNumber, setTableNumber] = useState("");
-
+const App = () => {
   return (
     <>
-      <h1> Learn Table </h1>
-
-      <p>
-        Which table you want to learn :{" "}
-        <input type="number" onChange={(e) => setTableNumber(e.target.value)} />
-      </p>
-
-      {tableNumber ? (
-        <table>
-          <thead>
-            <tr>
-              <th>Table of 1</th>
-            </tr>
-          </thead>
-          <tbody>
-            {items.map((item) => {
-              return (
-                <tr>
-                  <td>
-                    {` ${tableNumber} * ${item} = ${item * tableNumber}`}{" "}
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      ) : (
-        "Enter a table number"
-      )}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/table" element={<TableUsingMap />} />
+        <Route path="/carousel" element={<BasicCarousel />} />
+      </Routes>
     </>
   );
-}
+};
 
 export default App;
