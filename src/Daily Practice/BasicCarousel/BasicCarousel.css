@@ -1,3 +1,29 @@
+body {
+  align-items: center;
+}
 .imagesStyle {
-  width: 300px;
+  width: 400px;
+}
+.boxStyling {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prevbuttonStyle {
+  margin: 2rem;
+  margin-right: 1rem;
+}
+button {
+  height: 3rem;
+  width: 3rem;
+  color: black;
+  margin: 1rem;
+  background-color: bisque;
+  border: 2px solid black;
+  transition: all ease-in-out;
+}
+button:hover {
+  background-color: rgb(109, 227, 190);
+  transform: scale(1.2);
 }

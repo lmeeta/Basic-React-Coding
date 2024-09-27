@@ -8,7 +8,7 @@ const Home = () => {
       <h1>Daily Activities</h1>
       <ul>
         <li>
-          Day 1: <Link to="/table">Table Using Map</Link>
+          Day 1: <Link to="/tableusingmap">Table Using Map</Link>
         </li>
         <li>
           Day 2: <Link to="/carousel">Basic Carousel</Link>

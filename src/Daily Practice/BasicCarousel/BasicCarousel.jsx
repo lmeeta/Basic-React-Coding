@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import "./BasicCarousel.css";
 
 function BasicCarousel() {
@@ -13,6 +13,7 @@ function BasicCarousel() {
 
   useEffect(() => {
     CallApi();
+    setInterval(handleNext, 4000);
   }, []);
 
   const handlePrev = () => {
@@ -23,23 +24,32 @@ function BasicCarousel() {
     }
   };
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     if (currentIndex === images.length - 1) {
       setCurrentIndex(0);
     } else {
       setCurrentIndex((prev) => prev + 1);
     }
-  };
+  }, [currentIndex]);
 
   return (
     <>
-      <h1>carousel</h1>
+      <h1>Carousel</h1>
       {images.length > 1 ? (
-        <div>
-          <img src={images[currentIndex].url} className="imagesStyle" />
-          <button onClick={handlePrev}>prev</button>
-          <button onClick={handleNext}>next</button>
-        </div>
+        <>
+          <div className="boxStyling">
+            <img src={images[currentIndex].url} className="imagesStyle" />
+          </div>
+          <button onClick={handlePrev} className="prevbuttonStyle">
+            <i className="fa-solid fa-chevron-left"></i>
+          </button>
+          <button>
+            <i className="fa-solid fa-pause"></i>
+          </button>
+          <button onClick={handleNext}>
+            <i className="fa-solid fa-chevron-right"></i>
+          </button>
+        </>
       ) : null}
     </>
   );
