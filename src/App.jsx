@@ -3,6 +3,7 @@ import TableUsingMap from "./Daily Practice/TableUsingMap/TableUsingMap";
 import { Routes, Route } from "react-router-dom";
 import BasicCarousel from "./Daily Practice/BasicCarousel/BasicCarousel";
 import Home from "./Daily Practice/Home/Home";
+import InputDataToTable from "./Daily Practice/InputDataToTable/InputDataToTable";
 
 const App = () => {
   return (
@@ -40,6 +41,11 @@ const App = () => {
                   Day 2
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/inputdatatotable">
+                  Day 3
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -48,6 +54,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/tableusingmap" element={<TableUsingMap />} />
         <Route path="/carousel" element={<BasicCarousel />} />
+        <Route path="/inputdatatotable" element={<InputDataToTable />} />
       </Routes>
     </>
   );

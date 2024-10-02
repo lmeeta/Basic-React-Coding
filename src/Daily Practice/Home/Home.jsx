@@ -13,6 +13,9 @@ const Home = () => {
         <li>
           Day 2: <Link to="/carousel">Basic Carousel</Link>
         </li>
+        <li>
+          Day 3: <Link to="/inputdatatotable">Input Data To Table</Link>
+        </li>
       </ul>
     </>
   );
