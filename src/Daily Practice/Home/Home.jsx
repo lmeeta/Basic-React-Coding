@@ -16,6 +16,9 @@ const Home = () => {
         <li>
           Day 3: <Link to="/inputdatatotable">Input Data To Table</Link>
         </li>
+        <li>
+          Day 5: <Link to="/basicReducer">Learning Basic Reducer</Link>
+        </li>
       </ul>
     </>
   );
