@@ -18,6 +18,7 @@ const Home = () => {
         </li>
         <li>
           Day 5: <Link to="/basicReducer">Learning Basic Reducer</Link>
+          Day 6: <Link to="/filterdropdown">Filter Dropdown</Link>
         </li>
       </ul>
     </>

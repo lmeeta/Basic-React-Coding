@@ -1,0 +1,12 @@
+h1 {
+  font-style: italic;
+}
+p {
+  display: inline;
+  font-weight: 500;
+}
+
+select {
+  width: 8rem;
+  text-align: center;
+}
