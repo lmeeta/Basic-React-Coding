@@ -16,6 +16,9 @@ const Home = () => {
         <li>
           Day 3: <Link to="/inputdatatotable">Input Data To Table</Link>
         </li>
+        <li>
+          Day 6: <Link to="/filterdropdown">Filter Dropdown</Link>
+        </li>
       </ul>
     </>
   );

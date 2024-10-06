@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import BasicCarousel from "./Daily Practice/BasicCarousel/BasicCarousel";
 import Home from "./Daily Practice/Home/Home";
 import InputDataToTable from "./Daily Practice/InputDataToTable/InputDataToTable";
+import FilterDropDown from "./Daily Practice/FilterDropDown/FilterDropDown";
 
 const App = () => {
   return (
@@ -46,6 +47,11 @@ const App = () => {
                   Day 3
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/filterdropdown">
+                  Day 6
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -55,6 +61,7 @@ const App = () => {
         <Route path="/tableusingmap" element={<TableUsingMap />} />
         <Route path="/carousel" element={<BasicCarousel />} />
         <Route path="/inputdatatotable" element={<InputDataToTable />} />
+        <Route path="/filterdropdown" element={<FilterDropDown />} />
       </Routes>
     </>
   );
