@@ -53,6 +53,8 @@ const App = () => {
                 <a className="nav-link" href="/basicReducer">
                   Day 5
                 </a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link" href="/filterdropdown">
                   Day 6
                 </a>
