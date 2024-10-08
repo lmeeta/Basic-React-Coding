@@ -12,11 +12,15 @@ function TableUsingMap() {
 
       <p>
         Which table you want to learn :{" "}
-        <input type="number" onChange={(e) => setTableNumber(e.target.value)} />
+        <input
+          type="number"
+          placeholder="Enter a number"
+          onChange={(e) => setTableNumber(e.target.value)}
+        />
       </p>
 
       {tableNumber ? (
-        <table className="table-primary">
+        <table className="table">
           <thead>
             <tr>
               <th>Table of {tableNumber}</th>
@@ -34,9 +38,7 @@ function TableUsingMap() {
             })}
           </tbody>
         </table>
-      ) : (
-        "Enter a table number"
-      )}
+      ) : null}
     </>
   );
 }
