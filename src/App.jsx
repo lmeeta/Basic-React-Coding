@@ -7,6 +7,7 @@ import InputDataToTable from "./Daily Practice/InputDataToTable/InputDataToTable
 import BasicReducer from "./Daily Practice/Basic-Reducer-Practice/BasicReducer";
 import ComparingReducerWithState from "./Daily Practice/Basic-Reducer-Practice/ComparingReducerWithState";
 import FilterDropDown from "./Daily Practice/FilterDropDown/FilterDropDown";
+import SortUsingDropdown from "./Daily Practice/SortUsingDropdown/SortUsingDropdown";
 
 const App = () => {
   return (
@@ -59,6 +60,11 @@ const App = () => {
                   Day 6
                 </a>
               </li>
+              <li>
+                <a className="nav-link" href="/sortUsingDropdown">
+                  Day 7
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -74,6 +80,7 @@ const App = () => {
           element={<ComparingReducerWithState />}
         />
         <Route path="/filterdropdown" element={<FilterDropDown />} />
+        <Route path="/sortUsingDropdown" element={<SortUsingDropdown />} />
       </Routes>
     </>
   );
