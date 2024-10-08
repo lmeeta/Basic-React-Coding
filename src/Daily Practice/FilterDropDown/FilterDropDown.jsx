@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import "./FilterDropDown.css";
 
 function FilterDropDown() {
@@ -14,22 +14,17 @@ function FilterDropDown() {
   useEffect(() => {
     CallApi();
   }, []);
+
   const handleFilter = (e) => {
     const { value } = e.target;
-    if (value === "male") {
-      const maleFilter = users.filter(
-        (user) => user.gender.toLowerCase() === "male"
-      );
 
-      setFilterUsers(maleFilter);
-    } else if (value === "female") {
-      const femaleFilter = users.filter(
-        (user) => user.gender.toLowerCase() === "female"
-      );
-
-      setFilterUsers(femaleFilter);
-    } else {
+    if (value === "all") {
       setFilterUsers(users);
+    } else {
+      const genderFilter = users.filter(
+        (user) => user.gender.toLowerCase() === value
+      );
+      setFilterUsers(genderFilter);
     }
   };
 
