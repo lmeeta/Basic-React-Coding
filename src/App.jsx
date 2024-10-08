@@ -8,6 +8,7 @@ import BasicReducer from "./Daily Practice/Basic-Reducer-Practice/BasicReducer";
 import ComparingReducerWithState from "./Daily Practice/Basic-Reducer-Practice/ComparingReducerWithState";
 import FilterDropDown from "./Daily Practice/FilterDropDown/FilterDropDown";
 import SortUsingDropdown from "./Daily Practice/SortUsingDropdown/SortUsingDropdown";
+import Parent from "./Daily Practice/PropsPassingPtoC/Parent";
 
 const App = () => {
   return (
@@ -50,6 +51,11 @@ const App = () => {
                   Day 3
                 </a>
               </li>
+              <li>
+                <a className="nav-link" href="/propspassing">
+                  Day 4
+                </a>
+              </li>
               <li className="nav-item">
                 <a className="nav-link" href="/basicReducer">
                   Day 5
@@ -81,6 +87,7 @@ const App = () => {
         />
         <Route path="/filterdropdown" element={<FilterDropDown />} />
         <Route path="/sortUsingDropdown" element={<SortUsingDropdown />} />
+        <Route path="/propspassing" element={<Parent />} />
       </Routes>
     </>
   );
