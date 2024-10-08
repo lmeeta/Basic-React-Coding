@@ -22,6 +22,9 @@ const Home = () => {
         <li>
           Day 6: <Link to="/filterdropdown">Filter Dropdown</Link>
         </li>
+        <li>
+          Day 7: <Link to="/sortUsingDropdown">Sort Using Dropdown</Link>
+        </li>
       </ul>
     </>
   );
