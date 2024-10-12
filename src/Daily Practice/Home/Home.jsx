@@ -33,21 +33,27 @@ const Home = () => {
             </Link>
           </li>
           <li>
-            Day 5:{" "}
+            Day 5:
             <Link to="/basicReducer" className="linkStyling">
               Learning Basic Reducer
             </Link>
           </li>
           <li>
-            Day 6:{" "}
+            Day 6:
             <Link to="/filterdropdown" className="linkStyling">
               Filter Dropdown
             </Link>
           </li>
           <li>
-            Day 7:{" "}
+            Day 7:
             <Link to="/sortUsingDropdown" className="linkStyling">
               Sort Using Dropdown
+            </Link>
+          </li>
+          <li>
+            Day 8:
+            <Link to="/searchInputforTable" className="linkStyling">
+              Search Input for Table
             </Link>
           </li>
         </ul>
