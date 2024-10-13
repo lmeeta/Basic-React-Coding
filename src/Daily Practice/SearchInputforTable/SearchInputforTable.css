@@ -1,0 +1,21 @@
+h1 {
+  margin-bottom: 2rem;
+}
+#inputTextStyle {
+  margin: 1rem;
+  padding: 8px;
+  margin-bottom: 3rem;
+}
+label {
+  font-weight: 600;
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  font-size: medium;
+  display: block;
+}
+liStyle {
+  margin: 1rem;
+  border: 2px solid black;
+}

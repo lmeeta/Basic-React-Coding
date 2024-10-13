@@ -9,6 +9,7 @@ import ComparingReducerWithState from "./Daily Practice/Basic-Reducer-Practice/C
 import FilterDropDown from "./Daily Practice/FilterDropDown/FilterDropDown";
 import SortUsingDropdown from "./Daily Practice/SortUsingDropdown/SortUsingDropdown";
 import Parent from "./Daily Practice/PropsPassingPtoC/Parent";
+import SearchInputforTable from "./Daily Practice/SearchInputforTable/SearchInputforTable";
 
 const App = () => {
   return (
@@ -71,6 +72,11 @@ const App = () => {
                   Day 7
                 </a>
               </li>
+              <li>
+                <a className="nav-link" href="/searchInputforTable">
+                  Day 8
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -88,6 +94,7 @@ const App = () => {
         <Route path="/filterdropdown" element={<FilterDropDown />} />
         <Route path="/sortUsingDropdown" element={<SortUsingDropdown />} />
         <Route path="/propspassing" element={<Parent />} />
+        <Route path="/searchInputforTable" element={<SearchInputforTable />} />
       </Routes>
     </>
   );
